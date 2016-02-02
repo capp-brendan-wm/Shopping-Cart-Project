@@ -1,0 +1,48 @@
+#navbar {
+    height:60px;
+    width:100%;
+    background-color: sandybrown;
+
+}
+#product-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+    border-spacing: 10px;
+}
+.tableinfo {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background: white;
+    color:white;
+    font-size: 40px;
+    -webkit-text-stroke: 2px black;
+    height: 150px;
+    width: 150px;
+}
+#body {
+    background-image: url('Pictures/bread.jpg');
+}
+#home ,a {
+    font-size: 40px;
+}
+#navt ,a {
+    margin-left: auto;
+}
+.tableinfo ,a {
+    color: sandybrown;
+    -webkit-text-stroke: 2px black;
+}
+#home {
+    color: brown;
+}
+#sign-in {
+    color: brown;
+}
+#footer {
+    background-color: sandybrown;
+}
+a, a:hover, a:visited{
+    text-decoration: none;
+}
