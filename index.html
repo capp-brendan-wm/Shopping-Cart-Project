@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        li {
+            float: left;
+            padding-left: 210px;
+        }
+
+        li a {
+            display: block;
+            color:  blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: ghostwhite;
+        }
+
+        .active {
+            background-color: ghostwhite;
+        }
+    </style>
     <title>The Computer Lounge</title>
 </head>
 
-<div id="container">
-
-<div id="navbar">
-
-    <table id="navt">
-        <tr id="navtr">
-            <div><td><a id="home"href="index.php">Home</a></td></div>
-            <div><td><a id="products"href="products.php">Products</a></td></div>
-            <div><td><a id="sign-in" href="signin.php">Sign In</a></td></div>
-            <div><td><a id="sign-up" href="signup.php">Sign Up</a></td></div>
-        </tr>
-    </table>
-
-</div>
-
 <body id="body">
 
-<div id="block"></div>
+
+<ul>
+    <li class="nav"><a href="index.php">Home</a></li>
+    <li class="nav"><a href="signup.php">Sign In</a></li>
+    <li class="nav"><a href="signin.php">Sign Up</a></li>
+    <ul style="float:right;list-style-type:none;">
+        <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 30px; height: 30px;"/></a></li>
+    </ul>
+</ul>
 
     <div id="productchoices">
 

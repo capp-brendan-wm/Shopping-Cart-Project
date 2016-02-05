@@ -20,7 +20,7 @@ catch(PDOException $e)
     echo $e->getMessage();
 }
 
-$sql = "select * from animals";
+$sql = "select * from computerlounge";
 
 foreach($dbh->query($sql) as $row){
     echo $row['name'];
@@ -28,46 +28,94 @@ foreach($dbh->query($sql) as $row){
 
 ?>
 
-
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="../RentAPet/jquery.js"></script>
-    <title>The Bread Cart</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        li {
+            float: left;
+            padding-left: 210px;
+        }
+
+        li a {
+            display: block;
+            color:  blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: ghostwhite;
+        }
+
+        .active {
+            background-color: ghostwhite;
+        }
+    </style>
+    <title>The Computer Lounge</title>
 </head>
 
-<body>
+<body id="body">
 
-<div id="navbar">
 
-    <table id="navt">
-        <tr id="navtr">
-            <div id="home"><td><a href="index.php">Home</a></td></div>
+<ul>
+    <li class="nav"><a href="index.php">Home</a></li>
+    <li class="nav"><a href="signin.php">Sign In</a></li>
+    <li class="nav"><a href="signup.php">Sign Up</a></li>
+    <ul style="float:right;list-style-type:none;">
+        <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 30px; height: 30px;"/></a></li>
+    </ul>
+</ul>
+
+<div id="productchoices">
+
+    <table id="product-table">
+        <tr>
+            <th id="product0" colspan="5">Types of Accessories</th>
+        </tr>
+        <tr>
+            <th class="tableinfo" id="product1"><a href="search.php?product_name=keyboard">Keyboards</a></th>
+            <th class="tableinfo" id="product2"><a href="search.php?product_name=mouse">Mouses</a></th>
+            <th class="tableinfo" id="product3"><a href="search.php?product_name=headset">Headsets</a></th>
+            <th class="tableinfo" id="product4"><a href="search.php?product_name=speaker">Speakers</a></th>
+            <th class="tableinfo" id="product5"><a href="search.php?product_name=webcam">Webcams</a></th>
+        </tr>
+        <tr>
+            <th class="tableinfo" id="product6"><a href="search.php?product_name=monitor">Monitors</a></th>
+            <th class="tableinfo" id="product7"><a href="search.php?product_name=powersupply">Power Supplies</a></th>
+            <th class="tableinfo" id="product8"><a href="search.php?product_name=harddrive">Hard Drive</a></th>
+            <th class="tableinfo" id="product9"><a href="search.php?product_name=cable">Cables</a></th>
+            <th class="tableinfo" id="product10"><a href="search.php?product_name=videocard">Video Cards</a></th>
         </tr>
     </table>
 
 </div>
-<div>
 
+<div id="footer">
 
+    <table id="footert">
 
+        <tr id="footerTop">
+            <th id="footer1"><a href="about.html">About The Computer Lounge</a></th>
+        </tr>
+        <tr id="footerBottom">
+            <th id="footer2"><a href="aboutUs.html">About Us</a></th>
+        </tr>
+
+    </table>
 
 </div>
 
-
-
-
-
-
-
 </body>
-
-
-
-
-
-
-
-
 
 </html>

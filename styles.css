@@ -1,9 +1,4 @@
-#navbar {
-    height:60px;
-    width:100%;
-    background-color: ghostwhite;
 
-}
 #product-table {
     margin-left: auto;
     margin-right: auto;
@@ -17,24 +12,24 @@
     border-collapse: collapse;
     color:white;
     font-size: 40px;
-    -webkit-text-stroke: 2px black;
-    height: 150px;
-    width: 150px;
+    -webkit-text-stroke: 1px black;
+}
+
+.tableinfo ,a{
+    color: deepskyblue;
+    -webkit-text-stroke: 1px black;
 }
 #body {
-    background-image: url('Pictures/background.jpg');
+    background-color: #399AE7;
 }
 #home ,a {
     font-size: 40px;
 }
-#navt ,a {
-    margin-left: auto;
-}
-.tableinfo ,a {
+.tableinfo {
     color: deepskyblue;
     -webkit-text-stroke: 2px black;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 #home {
     color: brown;
@@ -78,7 +73,7 @@ a, a:hover, a:visited{
     -webkit-text-stroke: 2px black;
     height: 100px;
     width: 100px;
-    color: sandybrown;
+    color: deepskyblue;
 }
 #product1 {
     background-image: url('Pictures/keyboard.jpg');
@@ -100,6 +95,7 @@ a, a:hover, a:visited{
 }
 #product7 {
     background-image: url('Pictures/powersupply.jpg');
+    background-repeat: no-repeat;
 }
 #product8 {
     background-image: url('Pictures/harddrive.jpg');
