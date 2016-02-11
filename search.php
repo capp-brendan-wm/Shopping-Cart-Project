@@ -64,7 +64,7 @@ $results = $stmt->fetchAll();
                 $animalname = $animal['name'];
 
                 echo '<tr>';
-                echo "<td><a href='animalProfile.php?id=" . $animal['id'] . "'>{$animalname}</a></td>";
+                echo "<td><a href='animalProfile.php? id=" . $animal['id'] . "'>{$animalname}</a></td>";
                 echo '</tr>';
             }
         }

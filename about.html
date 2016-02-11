@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About The Computer Lounge</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            background-color: #399AE7;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+
+        }
+
+        li {
+            float: left;
+            padding-left: 210px;
+        }
+
+        li a {
+            display: block;
+            color:  blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: ghostwhite;
+        }
+
+        .active {
+            background-color: ghostwhite;
+        }
+         p {
+             text-indent: 50px;
+         }
+    </style>
+    <title>The Computer Lounge</title>
 </head>
 <body>
+<ul>
+    <li class="nav"><a href="index.php">Home</a></li>
+    <li class="nav"><a href="signup.php">Sign In</a></li>
+    <li class="nav"><a href="signin.php">Sign Up</a></li>
+    <ul style="float:right;list-style-type:none;">
+        <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 30px; height: 30px;"/></a></li>
+    </ul>
+</ul>
+
 <div>
-<p>     The Computer Lounge is a sponsered company by CEO of TopGame, Sean Thorpe. We sell computer accessories ranging from small to medium size such as mouses to monitors. </p>
+<p>The Computer Lounge is a sponsered company by CEO of TopGame, Sean Thorpe. We sell computer accessories ranging from small to medium size such as mouses to monitors. We are also in partnership with Game On which is owned by CEO Eric Pierce. All of us together attended the first generation of West-Mec Coding students. Our businesses all started as ideas during a project while we were attending West-Mec. My project lead to the creation of selling high quality computer accessories at a low price so that almost anyone could afford them to use.</p>
+</div>
+<div id="footer">
+
+    <table id="footert">
+
+        <tr id="footerTop">
+            <th id="footer1"><a href="about.html">About The Computer Lounge</a></th>
+        </tr>
+        <tr id="footerBottom">
+            <th id="footer2"><a href="aboutUs.html">About Us</a></th>
+        </tr>
+
+    </table>
+
 </div>
 </body>
 </html>

@@ -62,18 +62,57 @@ if(@$_POST['login']) {
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title> Sign-In </title>
+    <style>
+        body {
+            background-color: #399AE7;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: ghostwhite;
+
+        }
+
+        li {
+            float: left;
+            padding-left: 210px;
+        }
+
+        li a {
+            display: block;
+            color:  blue;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: ghostwhite;
+        }
+
+        .active {
+            background-color: ghostwhite;
+        }
+        p {
+            text-indent: 50px;
+        }
+    </style>
+    <title>The Computer Lounge</title>
 </head>
-<body>
-<ul>
+<body id="body">
+<ul style="background-color: ghostwhite">
     <li class="nav"><a href="index.php">Home</a></li>
-    <li class="nav"><a href="signup.php">Sign In</a></li>
-    <li class="nav"><a href="signin.php">Sign Up</a></li>
+    <li class="nav"><a href="signin.php">Sign In</a></li>
+    <li class="nav"><a href="signup.php">Sign Up</a></li>
     <ul style="float:right;list-style-type:none;">
         <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 30px; height: 30px;"/></a></li>
     </ul>
 </ul>
     <div id="filler7"></div>
+    <center>
+    <div id="formbody">
     <form method="POST">
         <h2>Sign - In</h2>
         <label>Username :</label>
@@ -98,11 +137,13 @@ if(@$_POST['login']) {
         }
         ?>
     </form>
-    <div id="buttonsu">
-        <a href="signup.php">
-            <button>Sign Up</button>
-        </a>
+        <div id="buttonsu">
+            <a href="signup.php">
+                <button>Sign Up</button>
+            </a>
+        </div>
     </div>
+    </center>
 <div id="filler2"></div>
 <div id="footer">
 

@@ -68,12 +68,12 @@ foreach($dbh->query($sql) as $row){
 <body id="body">
 
 
-<ul>
+<ul style="background-color: ghostwhite">
     <li class="nav"><a href="index.php">Home</a></li>
     <li class="nav"><a href="signin.php">Sign In</a></li>
     <li class="nav"><a href="signup.php">Sign Up</a></li>
     <ul style="float:right;list-style-type:none;">
-        <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 30px; height: 30px;"/></a></li>
+        <li class="nav"><a class="active" href=""><img src="http://simpleicon.com/wp-content/uploads/shopping-cart-7.png" style="width: 45px; height: 30px;"/></a></li>
     </ul>
 </ul>
 
